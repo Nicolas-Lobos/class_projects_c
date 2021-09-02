@@ -2,14 +2,12 @@
 #include <stdio.h>
 #include <math.h>
 //nome(x) rua(x) numero(x) bairro(x) cep(x) cidade(x)
+char option[1];
+main (){
+    fflush(stdin);
 
-float x;
-float y;
+    printf("\ndeseja realizar outra operação 's' ou 'n'?");
+    gets(option);
+    printf("%s", option);
 
-main()
-{
-    x = 100;
-    y = sqrt(x-37);
-    printf("a raiz de x = %f", y);
 }
-

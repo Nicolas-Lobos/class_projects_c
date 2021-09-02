@@ -1,3 +1,4 @@
+//library inclusions
 #include <conio.h>;
 #include <stdio.h>;
 
@@ -7,7 +8,7 @@
 
 //Variables used
 float Nota1, Nota2, Media;
-
+// main function
 main()
 {
     //Program name declaration
@@ -23,17 +24,21 @@ main()
 
     //user data processing
     Media = (Nota1 + Nota2)/2;
+    //decision structure
     if(Media<5){
+        //data output
         printf("Sua média é: %f e vc foi reprovado", Media);
     }
     else if(Media>7){
+        //data output
         printf("Sua média é: %f e vc foi aprovado", Media);
     }
     else if(Media>=5 && Media<7){
+        //data output
         printf("Sua média é: %f e vc vai fazer prova dnv", Media);
     }
     else{
-
+        //error message
         printf("Erro");
     }
     }

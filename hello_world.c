@@ -1,8 +1,8 @@
+//library inclusions
 #include <conio.h>;
 #include <stdio.h>;
-
-// Declaração de variaveis
-
+//main function
 main(){
+    //output
     printf("Hello World!");
 }

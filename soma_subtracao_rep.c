@@ -1,4 +1,4 @@
-//libray inclusions and function pull
+//library inclusions
 #include <stdio.h>
 #include <conio.h>
 //variable declaration
@@ -21,23 +21,23 @@ int main(){
         scanf(" %c",&c);
         //decision structure
         if (c == '+'){
-        //data processing
+            //data processing
             sum = a + b;
-        //processed data output
-        //flush to erase keyboard stored values
+            //processed data output
+            //flush to erase keyboard stored values
             fflush(stdin);
             printf("%f",sum);
-        // user interaction
+            // user interaction
             printf("\nDeseja realizar outra operação 's' ou 'n'?\n");
-        //read the user option 
+            //read the user option 
             scanf("%c", &option);
 
         }
         else if (c == '-'){
-        //data processing
+            //data processing
             sum = a - b;
-        //processed data output
-        //flush to erase keyboard stored values
+            //processed data output
+            //flush to erase keyboard stored values
             fflush(stdin);
             printf("%f",sum);
             // user interaction
@@ -47,8 +47,8 @@ int main(){
 
         }
         else {
-        //fail message
-        //flush to erase keyboard stored values
+            //fail message
+            //flush to erase keyboard stored values
             fflush(stdin);
             printf("caractere invalido");
             //user interaction

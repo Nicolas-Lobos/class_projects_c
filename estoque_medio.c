@@ -1,27 +1,26 @@
+//library inclusions
 #include <conio.h>;
 #include <stdio.h>;
 
-// declaração de variaveis
-
+//variable declaration
 float EstMin, EstMax, EstMed;
-
+//main function
 main()
 {
-    //Declaração do programa
+    //program name
     printf("Este programa calcula estoque médio");
     printf("\n===================================");
     printf("\n");
 
-    //input de dados do usuário
+    //user data input
     printf("Insira o valor minimo de estoque do item:\n");
     scanf("%f", &EstMin);
     printf("Insira o valor minimo de estoque do item:\n");
     scanf("%f", &EstMax);
 
-    //processamento de dados do usuário
+    //data processing
     EstMed=(EstMin+EstMax)/2;
 
-    //exibição de dados processados
-
+    //processed data output
     printf("O seu estoque médio é: %f", EstMed);
 }

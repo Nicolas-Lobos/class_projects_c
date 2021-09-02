@@ -1,3 +1,4 @@
+//library inclusion
 #include <conio.h>
 #include <stdio.h>
 #include <math.h>
@@ -6,17 +7,17 @@
 // em um plano cartesiano, utilizando a formula abaixo
 // sqrt((x1-x2)²+(y1-y2)²)
 
-// declaração de variaveis
+//variable declaration
 
 float x, x2, xf, y, y2, yf, d;
-
-main ()
-{   //nomeação do Programa
+//main function
+int main ()
+{   //program name
     printf("Este programa calcula a distância entre dois pontos");
     printf("\n================================");
     printf("\n");
 
-    //Input de dados do usuário
+    //user data input
     printf("Insira o primeiro ponto x:\n");
     scanf("%f", &x);
     printf("\n");
@@ -30,12 +31,14 @@ main ()
     scanf("%f", &y2);
     printf("\n");
 
-    //processamento
+    //data processing
     xf = pow((x - x2),2);
     yf = pow((y - y2),2);
     
     d = sqrt(xf + yf);
 
-    //exibição de dados processados
+    //processed data output
     printf("Distancia D e:%f", d);
-    }
+    
+return 0;
+}

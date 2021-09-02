@@ -1,8 +1,10 @@
+//library inclusions
 #include <conio.h>
 #include <stdio.h>
 
 //nome(x) rua(x) numero(x) bairro(x) cep(x) cidade(x)
 
+// variable declaration
 char nome[200];
 char rua[200];
 char cidade[200];
@@ -12,10 +14,10 @@ int cep;
 
 main()
 {
-    //descrição do programa
+    //program name
     printf("Este programa cadastra seus dados de endereco!\n");
 
-    //entrada de dados pelo usuário
+    //user data inputs
     printf("Por gentileza, insira seu nome:\n");
     gets(nome);
 
@@ -40,7 +42,7 @@ main()
     printf("Por gentileza, insira sua cidade:\n");
     gets(cidade);
 
-    //exibição de dados do usuário formatado
+    //data output
     printf("\n");
     printf("o nome do usuario e: %s", nome);
     printf("\n");

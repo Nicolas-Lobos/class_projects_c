@@ -7,9 +7,11 @@
 // Variable declaration
 float comprimento, r;
 double value_pi;
+//main function
 main() {
-    //program declaration
+    //pi declaration
     value_pi = (3.1415);
+    //program Declaration
     //user data input
     printf("Este programa realiza o calculo da circunferencia");
     printf("\n");

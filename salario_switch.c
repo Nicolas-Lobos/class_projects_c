@@ -13,12 +13,12 @@ Outros terão aumento de 110%
 
 
 //Variables Declaration
-
 int profession;
 float salary, salary_aj;
 
+//main function
 main(){
-    //Program Statement
+    //Program name declaration
     printf("Este Programa calcula salario ajustado\n");
     printf("======================================\n");
     
@@ -32,24 +32,34 @@ main(){
     printf("Insira seu salario atual:");
     scanf("%f", &salary);
 
-    //data processing
+    //choice structure
     switch (profession)
     {
+        //data processing
         case 1:
-        salary_aj = salary*1.5; 
-        printf("Salario Ajustado: %f", salary_aj);
-        break;
+        salary_aj = salary*1.5;
 
-        case 2:
-        salary_aj = salary*1.3; 
+        //processed data output 
         printf("Salario Ajustado: %f", salary_aj);
         break;
         
+        //data processing
+        case 2:
+        salary_aj = salary*1.3; 
+        
+        //processed data output
+        printf("Salario Ajustado: %f", salary_aj);
+        break;
+        
+        //data processing
         case 3:
         salary_aj = salary*1.1;
+        
+        //processed data output
         printf("Salario Ajustado: %f", salary_aj); 
         break;
-
+        
+        //error message if wrong number selected
         default:
         printf("Digito invalido");
     }

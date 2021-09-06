@@ -13,7 +13,7 @@ void vol_esfera(){
     printf("\n\nInsira o valor do Raio da esfera:\n");
     scanf("%f", &r);
     //data processing
-    vol1 = ((4/3)* value_pi);
+    vol1 = ((4/3) * value_pi);
     vol2 = pow(r,3);
     vf = vol1 * vol2;
     printf("\nVolume da esfera = %f", vf);

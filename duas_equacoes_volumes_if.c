@@ -7,14 +7,15 @@
 ///Vol = (4/3)* Pi * R^3
 void vol_esfera(){
     //local variable declaration based on the equation above
-    float vol1, vol2, vf, r, value_pi;
+    float vol1, vol2, vol3, vf, r, value_pi;
     value_pi = 3.1416;
     //user data input
     printf("\n\nInsira o valor do Raio da esfera:\n");
     scanf("%f", &r);
     //data processing
-    vol1 = ((4/3) * value_pi);
+    vol1 = (4 * value_pi);
     vol2 = pow(r,3);
+    vol3 = (vol1 * vol2)/3;
     vf = vol1 * vol2;
     printf("\nVolume da esfera = %f", vf);
     getch();

@@ -1,6 +1,7 @@
 #include <conio.h>
 #include <stdio.h>
 #include <math.h>
+#include <locale.h>
 // Criar um programa que resolva a equação de torricelli, utilizando sua formula
 // Vulgo vovô e vovó + dois anões num triângulo sexual
 // V²=V0+2a.▲S
@@ -9,10 +10,11 @@
 ///função que executa o calculo de torricelli
 void Torricelli()
 {
+    setlocale(LC_ALL, "Portuguese");
     float x, sf, so, a, vo, s;
     float v;
     //nomeação do programa
-    printf("Equacao de Torricelli\n");
+    printf("Equa��o de Torricelli\n");
     printf("----------------------");
     //input de dados do usuário
     printf("\n Por gentileza, insira a velocidade inicial (V0):");
@@ -42,13 +44,14 @@ void Torricelli()
 ///função para executar o calculo da equação de posição final
 /// S = S0 + V * T
 void pos_final(){
+    setlocale(LC_ALL, "Portuguese");
     //S = S0 + v*t
     //variable declarations
     float so, sf, v, t;
     //program namde declaration
     printf("\nFuncao horaria da posicao");
     //user data inputs
-    printf("\n\nInsira a posição inicial (S0): ");
+    printf("\n\nInsira a posi��o inicial (S0): ");
     scanf("%f", &so);
     printf("\nInsira o valor da velocidade (m/s): ");
     scanf("%f", &v);
@@ -59,20 +62,21 @@ void pos_final(){
     sf= so + (v*t);
 
     //processed data output
-    printf("\nPosição final = %f", sf);
+    printf("\nPosi��o final = %f", sf);
     getch();
 }
 ///função para executar o calculo da equação de velocidade final
 ///V = V0 + A * T
 void vel_final(){
+    setlocale(LC_ALL, "Portuguese");
     //variable declaration
     float v, v0, a, t;
     //program name declaration
-    printf("\nFuncao horaria da Velocidade");
+    printf("\nFun��o hor�ria da Velocidade");
     //user data inputs
     printf("\n\nInsira a velocidade inicial (S0): ");
     scanf("%f", &v0);
-    printf("\nInsira o valor da aceleracao (m/s): ");
+    printf("\nInsira o valor da acelera��o (m/s): ");
     scanf("%f", &a);
     printf("\nInsira o valor do tempo decorrido (s): ");
     scanf("%f", &t);

@@ -1,12 +1,13 @@
 #include <conio.h>
 #include <stdio.h>
-
+#include <locale.h>
 //variable declaration
 float a, b, x;
 
 //main function
 int main(int argc, char const *argv[])
 {
+    setlocale(LC_ALL, "Portuguese");
     printf("Insira um numero: ");
     scanf("%f",&a);
     printf("Insira o segundo numeros: ");

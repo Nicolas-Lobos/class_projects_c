@@ -1,13 +1,14 @@
 //library inclusions
 #include <stdio.h>
 #include <conio.h>
+#include <locale.h>
 //variable declaration
 float a, b, sum;
 char option;
 char c;
 //main declaration
 int main(){
-    
+    setlocale(LC_ALL, "Portuguese");
     //beginnng of loop structure
     do{
         //user data input

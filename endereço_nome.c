@@ -1,6 +1,7 @@
 //library inclusions
 #include <conio.h>
 #include <stdio.h>
+#include <locale.h>
 
 //nome(x) rua(x) numero(x) bairro(x) cep(x) cidade(x)
 
@@ -14,6 +15,7 @@ int cep;
 
 main()
 {
+    setlocale(LC_ALL, "Portuguese");
     //program name
     printf("Este programa cadastra seus dados de endereco!\n");
 

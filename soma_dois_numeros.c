@@ -1,8 +1,10 @@
 //library inclusions
 #include<conio.h>
 #include<stdio.h>
+#include<locale.h>
 //main function
 main() {
+    setlocale(LC_ALL, "Portuguese");
     //variable declaration
     int x, y, z;
     //user data input

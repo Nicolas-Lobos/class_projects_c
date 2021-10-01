@@ -1,12 +1,14 @@
 //library inclusions
 #include <conio.h>;
 #include <stdio.h>;
+#include <locale.h>
 
 //variable declaration
 float EstMin, EstMax, EstMed;
 //main function
 main()
 {
+    setlocale(LC_ALL, "Portuguese");
     //program name
     printf("Este programa calcula estoque médio");
     printf("\n===================================");

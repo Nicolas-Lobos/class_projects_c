@@ -1,11 +1,12 @@
 #include <conio.h>;
 #include <stdio.h>;
-
+#include <locale.h>;
 //variable declaration
 float A, B;
 //main function
 main()
 {
+    setlocale(LC_ALL, "Portuguese");
     //program declaration
     printf("Este programa faz a comparacao entre 2 numeros e exibe o maior\n");
     printf("=================================================================");

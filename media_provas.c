@@ -1,6 +1,7 @@
 //library inclusions
 #include <stdio.h>
 #include <conio.h>
+#include <locale.h>
 
 //variable declaration
 int p1, p2, p3, p4, media, media2;
@@ -8,6 +9,7 @@ int p1, p2, p3, p4, media, media2;
 //main function
 main()
 {
+    setlocale(LC_ALL, "Portuguese");
     //program name declaration
     printf("Este Algoritmo faz a media dos alunos");
     printf("\n Insira a sua primeira nota:");

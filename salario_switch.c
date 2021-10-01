@@ -1,5 +1,6 @@
 #include <conio.h>;
 #include <stdio.h>;
+#include <locale.h>;
 
 /*desenvolver um sistema para que o calculo do salario dos funcionarios seja aumentado 
 com base na profissão deles
@@ -18,6 +19,7 @@ float salary, salary_aj;
 
 //main function
 main(){
+    setlocale(LC_ALL, "Portuguese");
     //Program name declaration
     printf("Este Programa calcula salario ajustado\n");
     printf("======================================\n");

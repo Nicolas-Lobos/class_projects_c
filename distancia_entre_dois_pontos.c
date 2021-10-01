@@ -2,6 +2,7 @@
 #include <conio.h>
 #include <stdio.h>
 #include <math.h>
+#include <locale.h>
 
 // Desenvolva um programa que realize o calculo de distancia entre dois pontos quaisquer
 // em um plano cartesiano, utilizando a formula abaixo
@@ -11,8 +12,9 @@
 
 float x, x2, xf, y, y2, yf, d;
 //main function
-int main ()
-{   //program name
+int main (){
+       //program name
+    setlocale(LC_ALL, "Portuguese");
     printf("Este programa calcula a distância entre dois pontos");
     printf("\n================================");
     printf("\n");

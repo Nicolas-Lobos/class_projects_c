@@ -1,12 +1,13 @@
 #include <conio.h>
 #include <stdio.h>
-
+#include <locale.h>
 // declaração de variaveis
 float a, b,  sum;
 char c;
 
 //program start
 int main(){
+    setlocale(LC_ALL, "Portuguese");
     //user data input
     printf("Insira um numero:");
     scanf("%f",&a);

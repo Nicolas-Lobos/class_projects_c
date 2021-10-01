@@ -1,6 +1,7 @@
 //library inclusions
 #include <conio.h>;
 #include <stdio.h>;
+#include <locale.h>;
 
 // develop a program that will show if a student
 // needs to take a new test, or has passed or failed the year
@@ -11,6 +12,7 @@ float Nota1, Nota2, Media;
 // main function
 main()
 {
+    setlocale(LC_ALL, "Portuguese");
     //Program name declaration
     printf("Este programa faz a media e diz se passa, nao passa ou faz prova");
     printf("\n================================================================");

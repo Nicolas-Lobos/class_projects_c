@@ -2,10 +2,12 @@
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
+#include <locale.h>
 
 ///Função para o executar o calculo de volume de uma esfera
 ///Vol = (4/3)* Pi * R^3
 void vol_esfera(){
+    setlocale(LC_ALL, "Portuguese");
     //local variable declaration based on the equation above
     float vol1, vol2, vol3, vf, r, value_pi;
     value_pi = 3.1416;
@@ -25,6 +27,7 @@ void vol_esfera(){
 ///Função para executar o calculo de volume de um prisma de base retangular
 ///Vol = L*C*H
 void vol_prisma(){
+    setlocale(LC_ALL, "Portuguese");
     // local variables declaration based on the equation above
     float vol, l, c, h;
     //user data input
@@ -46,6 +49,7 @@ void vol_prisma(){
 
 //main function
 main(){
+    setlocale(LC_ALL, "Portuguese");
     int choice;
     //program name declaration
     printf("Este programa executa equacoes de volume\n");
